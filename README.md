@@ -94,15 +94,6 @@ flowchart TD
     classDef r3 fill:#f5d0fe,stroke:#a855f7,stroke-width:2px,color:#6b21a8
     classDef r4 fill:#f3f4f6,stroke:#6b7280,stroke-width:2px,color:#374151
 ```
-
-## 多水平算法（K > 2 时触发）
-
-当某因素水平数 > 2 时，强制执行：
-
-1. **极值对比** — 只报 Level_K vs Level_1，禁止逐对报告
-2. **中间水平补充** — K=3 报单中间水平；K>3 按顺序逐一报告；补充平台检查（Level_K vs Level_{K-1}）
-3. **峰值检测** — 若两端无显著差异（P > 0.05），检查中间是否存在极值；若存在，打破顺序优先报告峰值，概括为"先升后降（单峰型）/先降后升（U型）"
-
 ## md2docx.py 用法
 
 ```bash
